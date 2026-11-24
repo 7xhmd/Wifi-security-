@@ -3,12 +3,16 @@
 title = WiFi Security
 package.name = wifisecurity
 package.domain = org.example
+
 source.dir = .
 source.include_exts = py,kv,txt
 version = 1.0
-requirements = python3==3.11.5,kivy
+
+requirements = python3,kivy
+
 orientation = portrait
 fullscreen = 0
+
 android.api = 35
 android.minapi = 23
 android.archs = arm64-v8a
