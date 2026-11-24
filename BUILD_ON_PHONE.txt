@@ -1,0 +1,17 @@
+WiFi Security — Build APK from your phone using GitHub Actions
+
+1. Extract this ZIP on your phone.
+2. Create a new repository on GitHub in your browser.
+3. Upload main.py, buildozer.spec, and the hidden .github/workflows/build.yml file.
+   Make sure the .github folder is uploaded (enable hidden files if necessary).
+4. Open the repository's Actions tab and enable Actions if prompted.
+5. Choose "Build WiFi Security APK" > "Run workflow".
+6. When the run succeeds, open it and download the artifact "WiFi-Security-debug-apk".
+7. Extract the downloaded artifact ZIP and install the APK.
+
+This creates a debug APK for testing. GitHub Actions builds it on a hosted Linux
+machine, so the Android NDK does not need to run inside ARM64 Termux/PRoot.
+
+The app only counts file names/types locally; it does not upload files, inspect
+file contents, crack Wi-Fi, or run a persistent background service.
+Android scoped-storage rules may limit folder visibility in this first version.
